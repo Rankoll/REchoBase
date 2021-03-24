@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>LoginForm</title>
+  </head>
+  <body>
+
+    <h1><em>Login</em></h1>
+    <form method = "post" action = "recho" name = "echo"> 
+    <h2>Riempi i campi con i propri dati e clicca "Invia"</h2>
+
+    <fieldset>
+    	<legend>Dati personali</legend>
+        <label>Nome:<input type="text" name="nome"></label>
+      <br>   
+        <label>Cognome:<input type="text" name="cognome"></label> 
+      <br>
+        <label>Codice Fiscale:<input type="text" name="cf"></label>
+      <br>
+        <label>Email:<input type="email" name="email"></label>
+	  </fieldset>	
+	
+	<fieldset>
+		<legend>Indirizzo di spedizione</legend>
+      <label>Indirizzo: <input type="text" name="indirizzo"></label><br>
+      <label>Interno:<input type="number" name="interno"></label><br>
+      <label>Città:<input type="text" name="città"></label><br>
+      <label>Provincia:<input type="text" name="provincia"></label><br>
+      <label>Cap:<input type="number" name="cap"></label><br>
+	 </fieldset>	
+
+   <fieldset>
+     <legend>Informazioni carta di credito</legend>
+      <label>Numero della carta di credito:<input type="number" name="numerocarta"></label><br>
+      <label>Data di scadenza:<input type="number" name="scadenza"></label><br>
+      <label>Codice segreto:<input type="number" name="secret"></label><br>
+   </fieldset>
+
+   <fieldset>
+     <legend>Informazioni aggiuntive</legend>
+     Commento aggiuntivo:<br>
+      <textarea name="commento"></textarea>
+
+      <p>Elenco <b>NON</b> ordinato</p>
+      <ul>
+        <li>primo elemento</li>
+        <li>secondo elemento</li>
+        <li>terzo elemento</li>
+      </ul>
+
+      <p>Elenco ordinato</p>
+      <ol>
+      	<li>primo elemento</li>
+      	<li>secondo elemento</li>
+	      <li>terzo elemento</li>
+      </ol>
+
+      <label for="gender">Genere</label><br>
+      <input type="radio" id="uomo" name="gender" value="uomo" checked>
+      <label for="uomo">Uomo</label>
+      <br>
+      <input type="radio" id="donna" name="gender" value="donna"> 
+      <label for="donna">Donna</label>
+    <br>
+
+      <label>Extra:</label><br>
+      <input type="checkbox" id="newsletter" name="extra" value="newsletter">
+      <label for="newsletter">Registrami alla newsletter</label><br>
+      <input type="checkbox" id="licenza" name="extra" value="licenza" checked>
+      <label for="licenza">Accetto il contratto di licenza</label>
+    <br>
+
+      <label for="opzione">Scegli una fra le seguenti modalità:</label>
+      <select name="opzione" id="opzione">
+        <option value="Modalità 1">Modalità 1</option>
+        <option value="Modalità 2" selected>Modalità 2</option>
+        <option value="Modalità 3">Modalità 3</option>
+        <option value="Modalità 4">Modalità 4</option>
+      </select>
+  <br>
+      <p>
+        <input type="submit" value="Invia">
+		  </p>
+   </fieldset>
+    </form>
+  </body>
+</html>
